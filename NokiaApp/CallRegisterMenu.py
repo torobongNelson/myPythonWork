@@ -1,8 +1,7 @@
-
 from ShowCallDurationMenu import ShowCallDurationMenu
+
+
 class CallRegisterMenu:
-    def __init__(self):
-        self.scanner = input
 
     def display(self):
         print("Call Register:")
@@ -13,15 +12,15 @@ class CallRegisterMenu:
         print("5. Show call duration")
 
         choice = int(input())
-
-        if choice == 1:
-            print("Missed calls")
-        elif choice == 2:
-            print("Received calls")
-        elif choice == 3:
-            print("Dialed numbers")
-        elif choice == 4:
-            print("Erase recent call lists")
-        elif choice == 5:
-            show_call_duration_menu = ShowCallDurationMenu()
-            show_call_duration_menu.display()
+        match choice:
+            case 1:
+                print("Missed calls")
+            case 2:
+                print("Received calls")
+            case 3:
+                print("Dialed numbers")
+            case 4:
+                print("Erase recent call lists")
+            case 5:
+                show_call_duration_menu = ShowCallDurationMenu()
+                show_call_duration_menu.display()

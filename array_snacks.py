@@ -13,7 +13,7 @@ class ArraySnacks:
         for index in range(len(self.arr) - 1, -1, -1):
             print(self.arr[index], end=' ')
 
-          def does_number_exist_in_array(numbers, number):
+            def does_number_exist_in_array(numbers, number):
                 for i in numbers:
                     if i == number:
                         return True
@@ -51,6 +51,3 @@ class ArraySnacks:
                 total += numbers[i]
                 i += 1
             return total
-
-
-# Example usage:

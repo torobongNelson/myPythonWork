@@ -1,8 +1,6 @@
 class ShowCallDurationMenu:
-    def __init__(self):
-        self.scanner = input
 
-    def display(self):
+   def display(self):
         print("Show call duration:\n"
               + "1. Last call duration"
               + "2. All calls’ duration"

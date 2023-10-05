@@ -2,10 +2,6 @@ from PhoneBookOptions import PhoneBookOptions
 
 
 class PhoneBookMenu:
-
-    def __init__(self):
-        self.scanner = input
-
     def display(self):
         print("Phone Book Menu:")
         print("1. Search")

@@ -2,11 +2,11 @@ from phone_book_menu import PhoneBookMenu
 from messages_menu import MessagesMenu
 from CallRegisterMenu import CallRegisterMenu
 from ToneMenu import ToneMenu
+from Settings import Settings
+from Clock import Clock
 
 
 class Nokia:
-    def __init__(self):
-        self.scanner = input
 
     def display(self):
         print("Pick a number to choose an action:\n"
@@ -30,17 +30,47 @@ class Nokia:
         if user_choice == 1:
             phone_book_menu = PhoneBookMenu()
             phone_book_menu.display()
+
         elif user_choice == 2:
             messages_menu = MessagesMenu()
             messages_menu.display()
+
         elif user_choice == 3:
             print("Chat")
+
         elif user_choice == 4:
             call_register_menu = CallRegisterMenu()
             call_register_menu.display()
+
         elif user_choice == 5:
             tone_menu = ToneMenu()
             tone_menu.display()
+
+        elif user_choice == 6:
+            settings = Settings()
+            settings.display()
+
+        elif user_choice == 7:
+            print("Call divert")
+
+        elif user_choice == 8:
+            print("games")
+
+        elif user_choice == 9:
+            print("calculator")
+
+        elif user_choice == 10:
+            print("Reminder")
+
+        elif user_choice == 11:
+            clock = Clock()
+            clock.display()
+
+        elif user_choice == 12:
+            print("profiles")
+
+        elif user_choice == 13:
+            print("SIM services")
+
         else:
             print("Invalid choice. Please try again.")
-

@@ -2,8 +2,6 @@ from MessageSettingsMenu import MessageSettingsMenu
 
 
 class MessagesMenu:
-    def __init__(self):
-        self.scanner = input
 
     def display(self):
         print("Messages:")
